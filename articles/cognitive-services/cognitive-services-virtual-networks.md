@@ -34,7 +34,7 @@ Network rules are enforced on all network protocols to Azure Cognitive Services,
 
 ## Supported regions and service offerings
 
-Virtual network support for Cognitive Services is limited to the *Canary - Central US EUAP*, *West Europe*, and *West US 2* Azure regions. Additionally, not all of the Cognitive Service offerings support virtual networks. The following Cognitive Service offerings allow for the use of virtual networks. If the service offering is not listed here, it doesn't support virtual networks.
+Virtual network support for Cognitive Services is limited to the *Canary - Central US EUAP*, *West Europe*, *West US 2*, *South Central US*, *East US*, *North Europe*, *South Africa North*, *Central India*, *Australia East*, *West US*, and *US Gov Virginia* Azure regions. Additionally, not all of the Cognitive Service offerings support virtual networks. The following Cognitive Service offerings allow for the use of virtual networks. If the service offering is not listed here, it doesn't support virtual networks.
 
 > [!div class="checklist"]
 > * [Anomaly Detector](./anomaly-detector/index.yml)
@@ -46,6 +46,8 @@ Virtual network support for Cognitive Services is limited to the *Canary - Centr
 > * [LUIS](./luis/index.yml)
 > * [Personalizer](./personalizer/index.yml)
 > * [Text Analytics](./text-analytics/index.yml)
+> * [Translator Text](./translator/index.yml)
+> * [QnA Maker](./qnamaker/index.yml)
 
 ## Change the default network access rule
 
@@ -185,7 +187,7 @@ You can manage virtual network rules for Cognitive Services resources through th
    ![Create vNet](media/vnet/virtual-network-create.png)
 
     > [!NOTE]
-    > If a service endpoint for Azure Cognitive Services wasn't previously configured for the selected virtual network and subnets, you can configure it as part of this operation.
+    > If a service endpoint for Azure Cognitive Services wasn't previously configured for the selected virtual network and subnets, you can configure it as part of this operation. 
     >
     > Presently, only virtual networks belonging to the same Azure Active Directory tenant are shown for selection during rule creation. To grant access to a subnet in a virtual network belonging to another tenant, please use Powershell, CLI or REST APIs.
 
